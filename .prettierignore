@@ -1,0 +1,15 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore build & coverage files
+dist/
+build/
+coverage/
+
+# Ignore environment variables
+.env
+.env.*
+
+# Ignore specific file types that don't need strict formatting
+*.md
+*.log
