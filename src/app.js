@@ -20,6 +20,11 @@ app.use(
 );
 
 // cookie-parser
-app.use(cookieParser())
+app.use(cookieParser());
+
+// import routes
+import healthCheckRouter from "./routes/healthcheck.routes.js";
+
+app.use("/api/v1/healthcheck", healthCheckRouter);
 
 export default app;
