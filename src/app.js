@@ -24,7 +24,10 @@ app.use(cookieParser());
 
 // import routes
 import healthCheckRouter from "./routes/healthcheck.routes.js";
+import authRouer from "./routes/auth.routes.js"
 
+// routes  define
 app.use("/api/v1/healthcheck", healthCheckRouter);
+app.use("/api/v1/auth", authRouer)
 
 export default app;

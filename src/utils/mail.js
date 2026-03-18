@@ -3,7 +3,6 @@ import nodemailer from "nodemailer";
 
 // mailgen generator
 const sendEmail = async (options) => {
-    
   const mailGenerator = new Mailgen({
     theme: "default",
     product: {
@@ -26,7 +25,7 @@ const sendEmail = async (options) => {
 
   const mail = {
     from: "mail.taskmanager@example.com",
-    to: options.mail,
+    to: options.email,
     subject: options.subject,
     text: emailTextual,
     html: emailHtml,
